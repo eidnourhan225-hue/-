@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مخبز ريف المعادي | خبز وحلويات طازجة يومياً</title>
+    <!-- Google Fonts: Cairo & Amiri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Amiri:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <i class="fa-solid fa-wheat-awn logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-title">ريف المعادي</span>
+                    <span class="logo-subtitle">مخبز وحلويات حرفية</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">عن المخبز</a>
+                <a href="#products" class="nav-link">قائمة المنتجات</a>
+                <a href="#location" class="nav-link">موقعنا</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/201099998888?text=مرحباً%20مخبز%20ريف%20المعادي،%20أود%20الاستفسار%20عن%20المخبوزات" 
+                   target="_blank" 
+                   class="btn btn-whatsapp-nav">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>تواصل معنا</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-fire-burner"></i> طازج من الفرن كل صباح</span>
+            <h1 class="hero-title">مخبز ريف المعادي</h1>
+            <p class="hero-description">
+                في قلب المعادي الهادئة، نخبز لكم كل فجر بأجود أنواع الدقيق والخمائر الطبيعية لنقدم لكم أشهى الخبز الريفي، الكرواسون الفرنسي والحلويات الطازجة بحب وإتقان.
+            </p>
+            <div class="hero-actions">
+                <a href="#products" class="btn btn-primary">
+                    <i class="fa-solid fa-bread-slice"></i>
+                    <span>استكشف المنتجات</span>
+                </a>
+                <a href="https://wa.me/201099998888?text=مرحباً%20مخبز%20ريف%20المعادي،%20أود%20طلب%20مخبوزات%20طازجة" 
+                   target="_blank" 
+                   class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>طلب سريع عبر واتساب</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Highlights -->
+    <section class="features-section" id="about">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>طازج يومياً</h3>
+                    <p>دفعات خبز ساخنة تخرج من أفراننا على مدار اليوم لتصلكم بأعلى جودة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>مكونات طبيعية 100%</h3>
+                    <p>زبدة طبيعية، حبوب كاملة، وبدون أي محسنات صناعية أو مواد حافظة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>طرق خَبز تقليدية</h3>
+                    <p>تخمير بطيء يتعدى 24 ساعة يمنح المخبوزات طعماً غنياً وهضماً مريحاً.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>توصيل داخل المعادي</h3>
+                    <p>خدمة توصيل فورية وسريعة لكافة مناطق دجلة وثكنات والمعادي القديمة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / Menu Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">منيو المخبز</span>
+                <h2 class="section-title">قائمة المخبوزات والحلويات</h2>
+                <div class="divider"></div>
+                <p class="section-desc">اختر ما يعجبك واضغط على زر الطلب لتأكيد طلبك مباشرة عبر تطبيق الواتساب</p>
+            </div>
+
+            <!-- Categories Tabs -->
+            <div class="category-tabs" id="categoryTabs">
+                <button class="tab-btn active" data-category="all">الكل</button>
+                <button class="tab-btn" data-category="bread">الخبز الحرفي</button>
+                <button class="tab-btn" data-category="pastry">الكرواسون والفطائر</button>
+                <button class="tab-btn" data-category="sweets">الحلويات والكيك</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products dynamically rendered or static for SEO & fast load -->
+                <!-- Product 1 -->
+                <div class="product-card" data-category="pastry">
+                    <div class="product-badge">الأكثر طلباً</div>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="كرواسون زبدة فرنسي" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">كرواسون زبدة فرنسي</h3>
+                        <p class="product-desc">كرواسون كلاسيكي هش ومورق مصنوع بأفضل زبدة طبيعية فرنسية.</p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="amount">40</span>
+                                <span class="currency">ج.م</span>
+                            </div>
+                            <button class="btn btn-order" onclick="orderItem('كرواسون زبدة فرنسي', '40 ج.م')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="bread">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=600&q=80" alt="خبز ساوردو ريفي" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">خبز ساوردو ريفي (تخمير طبيعي)</h3>
+                        <p class="product-desc">خبز قمح كامل مخمر ببطء لمدة 36 ساعة، قشرة مقرمشة ولب رطب.</p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="amount">65</span>
+                                <span class="currency">ج.م</span>
+                            </div>
+                            <button class="btn btn-order" onclick="orderItem('خبز ساوردو ريفي', '65 ج.م')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="pastry">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=600&q=80" alt="سينامون رولز بالقرفة" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">لفائف القرفة (سينامون رول)</h3>
+                        <p class="product-desc">عجينة هشة وطرية محشوة بقرفة سيلانية فاخرة ومغطاة بكريمة الجبن اللذيذة.</p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="amount">50</span>
+                                <span class="currency">ج.م</span>
+                            </div>
+                            <button class="btn btn-order" onclick="orderItem('سينامون رول بالقرفة', '50 ج.م')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="bread">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80" alt="باجيت فرنسي مقرمش" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">باجيت فرنسي تقليدي</h3>
+                        <p class="product-desc">خبز باجيت باريسي تقليدي مقرمش من الخارج وفائق الهشاشة من الداخل.</p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="amount">25</span>
+                                <span class="currency">ج.م</span>
+                            </div>
+                            <button class="btn btn-order" onclick="orderItem('باجيت فرنسي تقليدي', '25 ج.م')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="sweets">
+                    <div class="product-badge">مميز</div>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="كوكيز شوكولاتة بلجيكية" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">كوكيز قطع الشوكولاتة الذائبة</h3>
+                        <p class="product-desc">كوكيز طري وغني بقطع الشوكولاتة الداكنة والحليبية البلجيكية مع رشة ملح البحر.</p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="amount">35</span>
+                                <span class="currency">ج.م</span>
+                            </div>
+                            <button class="btn btn-order" onclick="orderItem('كوكيز شوكولاتة بلجيكية', '35 ج.م')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="pastry">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="دانيش التوت والكريمة" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">دانيش التوت والكاسترد</h3>
+                        <p class="product-desc">معجنات مورقة محشوة بكاسترد الفانيليا الغني ومزينة بتوت بري طازج.</p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="amount">45</span>
+                                <span class="currency">ج.م</span>
+                            </div>
+                            <button class="btn btn-order" onclick="orderItem('دانيش التوت والكاسترد', '45 ج.م')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="sweets">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80" alt="تارت الفراولة والتوت" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">تارت الفواكه الطازجة</h3>
+                        <p class="product-desc">عجينة سابليه مقرمشة بكريمة باتسيير مخملية وفواكه موسمية طازجة.</p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="amount">55</span>
+                                <span class="currency">ج.م</span>
+                            </div>
+                            <button class="btn btn-order" onclick="orderItem('تارت الفواكه الطازجة', '55 ج.م')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="sweets">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="كيكة الشوكولاتة الفاخرة" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">قطعة كيك فادج الشوكولاتة</h3>
+                        <p class="product-desc">كيكة غنية بطبقات الشوكولاتة الكثيفة مع جناش الشوكولاتة البلجيكية.</p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="amount">60</span>
+                                <span class="currency">ج.م</span>
+                            </div>
+                            <button class="btn btn-order" onclick="orderItem('قطعة كيك فادج الشوكولاتة', '60 ج.م')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Banner CTA -->
+    <section class="whatsapp-banner">
+        <div class="container banner-container">
+            <div class="banner-text">
+                <h2>جاهز لتجربة أطيب مخبوزات في المعادي؟</h2>
+                <p>يمكنك إرسال طلبك مباشرة أو الاستفسار عن كيكات المناسبات والطلبات الخاصة عبر الواتساب فوراً.</p>
+            </div>
+            <a href="https://wa.me/201099998888?text=مرحباً%20مخبز%20ريف%20المعادي،%20أود%20تقديم%20طلب" 
+               target="_blank" 
+               class="btn btn-whatsapp-large">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>تحدث معنا على واتساب</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">تشرفنا زيارتكم</span>
+                <h2 class="section-title">العنوان ومواعيد العمل</h2>
+                <div class="divider"></div>
+                <p class="section-desc">موجودون دائماً لنستقبلكم بابتسامة ورائحة الخبز الزكية</p>
+            </div>
+
+            <div class="location-wrapper">
+                <!-- Info Column -->
+                <div class="info-card">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>العنوان بالتفصيل</h4>
+                            <p>١٥ شارع ٩، بالقرب من محطة مترو المعادي، حي المعادي، القاهرة</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4>ساعات العمل اليومية</h4>
+                            <p>يومياً من الساعة ٧:٠٠ صباحاً حتى ١١:٠٠ مساءً</p>
+                            <span class="badge-open">مفتوح الآن</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>رقم الهاتف</h4>
+                            <p dir="ltr"><a href="tel:+201099998888">+20 10 9999 8888</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <h4>طلبات الواتساب والتوصيل</h4>
+                            <p dir="ltr"><a href="https://wa.me/201099998888" target="_blank">+20 10 9999 8888</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="map-card">
+                    <iframe 
+                        title="موقع مخبز ريف المعادي على الخريطة"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13824.787687895048!2d31.2588147!3d29.9592237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458380e2d31e9c7%3A0xb366ec46a0c00827!2sMaadi%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <i class="fa-solid fa-wheat-awn"></i>
+                <span>مخبز ريف المعادي</span>
+            </div>
+            <p>جميع الحقوق محفوظة &copy; 2026 مخبز ريف المعادي - صناع السعادة اليومية</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/201099998888" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button for Mobile & Desktop -->
+    <a href="https://wa.me/201099998888?text=مرحباً%20مخبز%20ريف%20المعادي،%20أود%20طلب%20مخبوزات" 
+       target="_blank" 
+       class="floating-whatsapp" 
+       id="floatingWhatsapp" 
+       title="تواصل عبر واتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="floating-tooltip">راسلنا على واتساب!</span>
+    </a>
+
+    <!-- Toast Notification for interactive clicks -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMessage">جاري التحويل إلى واتساب...</span>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
